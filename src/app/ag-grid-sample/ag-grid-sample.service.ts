@@ -1,14 +1,13 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { IAgGridSampleData } from './ag-grid-sample-data.interface';
+
+import * as data from './data';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AgGridSampleService {
-  constructor(private httpClient: HttpClient) {}
-
-  public getGridData(): Observable<any> {
-    return this.httpClient.get('./data.json');
+  public getGridData(): IAgGridSampleData {
+    return data.GRID_DATA;
   }
 }
