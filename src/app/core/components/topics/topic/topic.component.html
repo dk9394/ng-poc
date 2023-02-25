@@ -1,0 +1,8 @@
+<div class="card">
+  <!-- <img src="..." class="card-img-top" alt="..." /> -->
+  <div class="card-body">
+    <h5 class="card-title">{{ topic.name }}</h5>
+    <p class="card-text">{{ topic.description | charLimit }}</p>
+    <a [routerLink]="topic.link" class="btn btn-dark">Explore</a>
+  </div>
+</div>

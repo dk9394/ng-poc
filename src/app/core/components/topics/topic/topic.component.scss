@@ -1,0 +1,24 @@
+@import "base";
+
+:host {
+  height: 100%;
+  display: block;
+}
+
+.card {
+  height: 100%;
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+
+    .card-title {
+      color: $theme;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-text {
+      flex: 1 1 auto;
+    }
+  }
+}
